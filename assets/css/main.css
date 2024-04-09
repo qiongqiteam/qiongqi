@@ -226,8 +226,10 @@ a {
   background-image: linear-gradient(to bottom, #161117, rgba(22, 17, 23, 0)); }
 
 .header-logo {
-  width: 120px;
-  width: 90px; }
+  width: 160px; }
+  @media (max-width: 991.98px) {
+    .header-logo {
+      width: 120px; } }
 
 .header-nav {
   height: 100%;
@@ -582,7 +584,7 @@ a {
   .landing-about-img {
     position: absolute;
     right: 0;
-    bottom: -50px;
+    top: -50px;
     width: 58vw;
     max-width: 1000px;
     padding: 0;
@@ -687,21 +689,13 @@ iframe {
   transform: scale(1.02, 1.02); }
 
 .landing-purchase {
-  position: relative;
-  height: 600px;
-  background-image: url(../images/landing/purchase-banner.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-  @media (max-width: 575.98px) {
-    .landing-purchase {
-      height: 400px; } }
+  position: relative; }
   .landing-purchase-text {
     position: absolute;
+    left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto 0;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -716,9 +710,13 @@ iframe {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media (max-width: 767.98px) {
+      .landing-purchase-text {
+        top: inherit;
+        bottom: 20%; } }
     @media (max-width: 575.98px) {
       .landing-purchase-text {
-        left: 0; } }
+        bottom: 15%; } }
 
 .about-container {
   background-image: url(../images/about/kv.png);
@@ -959,7 +957,6 @@ iframe {
 
 .howtoplay-main {
   position: relative;
-  border: solid 2px rgba(207, 193, 155, 0.5);
   border-radius: 20px;
   background-image: url(../images/howtoplay/gameplay-bg.png);
   background-repeat: no-repeat;
@@ -1023,6 +1020,24 @@ iframe {
   -webkit-transform: scale(1.15, 1.15);
   -ms-transform: scale(1.15, 1.15);
   transform: scale(1.15, 1.15); }
+
+.tutorial-item-bg1 {
+  background-image: url(../images/howtoplay/tutorial-bg1.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%; }
+
+.tutorial-item-bg2 {
+  background-image: url(../images/howtoplay/tutorial-bg2.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%; }
+
+.tutorial-item-bg3 {
+  background-image: url(../images/howtoplay/tutorial-bg3.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%; }
 
 .characters {
   background-image: url(../images/about/kv.png);
